@@ -1,2 +1,21 @@
 # ORM-Ecommerce-back-end
-configure a working Express.js API 
+
+# Description
+
+#
+
+configure a working Express.js API
+
+#
+
+#
+
+# Dependencies
+
+#
+
+Sequalize, mySQL2, dotenv
+
+#
+
+#
