@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
     .catch((err) => res.status(500).json(err));
 });
 
-// find a single tag by its `id` be sure to include its associated Product data
+// --------------------------find a single tag by its `id` be sure to include its associated Product data
 //
 //
 router.get("/:id", (req, res) => {
@@ -24,8 +24,13 @@ router.get("/:id", (req, res) => {
     .catch((err) => res.status(500).json(err));
 });
 
+// -------------------------------create a new tag------------------------------
+// 
+// 
 router.post("/", (req, res) => {
-  // create a new tag
+  Tag.create(req.body)
+    .then((tag) => res.status(200).json(tag))
+    .catch((err) => res.status(500).json(err));
 });
 
 router.put("/:id", (req, res) => {
