@@ -8,7 +8,7 @@ const { Product, Category, Tag, ProductTag } = require("../../models");
 //
 router.get("/", (req, res) => {
   Product.findAll({
-    include: [Tag],
+    include: [Category, Tag],
   })
     .then((products) => res.json(products))
     .catch((err) => res.status(500).json(err));
@@ -20,13 +20,15 @@ router.get("/", (req, res) => {
 // 
 router.get("/:id", (req, res) => {
   Product.findByPk(req.params.id,{
-    include: [Tag],
+    include: [Category, Tag],
   })
   .then((productData) => res.json(productData))
     .catch((err) => res.status(500).json(err));
 });
 
-// create new product
+// ----------------------create new product
+// 
+// 
 router.post("/", (req, res) => {
   /* req.body should look like this...
     {
