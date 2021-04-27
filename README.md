@@ -5,7 +5,7 @@
 #
 
 An example of Object Relational Mapping.
-This is a back-end for an e-commerce site with a working Express.js API that uses the Javascript ORM Sequelize, to interact with a MySQl database using Node.js.
+This application is a back-end for an e-commerce site with a working Express.js API that uses the Javascript ORM Sequelize, to interact with a MySQl database using Node.js.
 
 #
 
@@ -17,6 +17,10 @@ This is a back-end for an e-commerce site with a working Express.js API that use
 
 Within this application the user will be able to view all products, tags and cagtegories. Create new products, tags and categories. Update a product, tag or category, as well as delete a product, tag or category.
 The server and the models are synced to the MySQL database upon invoke of the application.
+
+#
+
+#
 
 # Dependencies
 
@@ -47,3 +51,29 @@ Functionality of Category-routes testing in Insomnia Core
 #
 
 ![Category-routes](./assets/CategoryRoute.gif)
+
+#
+
+#
+#
+
+Functionality of Product-routes testing in Insomnia Core
+#
+
+![Product-routes](./assets/ProductsRouteTesting.gif)
+
+#
+
+#
+#
+
+Functionality of ProductTag route testing in Insomnia Core
+#
+
+![Product-routes](./assets/ProductTagTesting.gif)
+
+#
+
+#
+#
+
